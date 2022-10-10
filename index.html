@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mandelbrot</title>
+	<script type="text/javascript" src="jquery-min-1.7.js"></script>
+	<script type="text/javascript" src="mandelbrot.js"></script>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<canvas id="canvas" width="200" height="200"></canvas>
+	<p>NUM+ = Zoom       NUM- = Un-zoom       Arrow keys = move around       Mouse click = move to selected pixel</p>
+	<br />
+	<p><a href="gradual.html">Line-by-line rendering (for big images)</a></p>
+	<div id="rgb" style="display:inline-block; background-color:#888; cursor:pointer;">Black & white</div>
+	<div id="hsv" style="display:inline-block; background-color:#CC8822; cursor:pointer;">Colorful (HSV)</div>
+	<div id="16col" style="display:inline-block; background-color:#4C99B2; cursor:pointer;">16 Colors</div>
+	<p id="zoom">Zoom: 128</p>
+	<p id="X">X: 0</p>
+	<p id="Y">Y: 0</p>
+	<p id="res">Resolution: </p>
+	<p id="iter">Iterations: </p>
+	<p style="display:inline-block;">Width</p><input type="text" id="newX" />
+	<p style="display:inline-block;">Heigth</p><input type="text" id="newY" />
+	<div id="accept" style="width:80px; height:20px; background-color:#CC4444; cursor:pointer;">Enter</div>
+	<br />
+	<p>Sample images:</p>
+	<br />
+	<img style="width:1500px" src="mandelbrot1.jpg" />
+	<img src="mandelbrot2.jpg" />
+	<img src="mandelbrot3.jpg" />
+</body>
+</html>
